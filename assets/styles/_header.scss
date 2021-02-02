@@ -35,7 +35,7 @@ header {
         top: 13%;
         left: 15%;
         // width: 50vmax;
-        z-index: 2;
+        z-index: 1;
         animation: move 10s ease-in-out infinite;
         transform-origin: 50% 50%;
     }
@@ -48,7 +48,7 @@ header {
         top: 13%;
         left: 35%;
         //width: 35vmax;
-        z-index: 1;
+        z-index: 0;
         animation: move 10s ease-in-out infinite;
         transform-origin: 50% 50%;
     }
@@ -58,8 +58,8 @@ header {
 
 @keyframes move {
     0%   { transform: scale(1)   translate(10px, -20px); }
-    38%  { transform: scale(0.8, 0.9) translate(4vw, 2vh) rotate(25deg); }
-    40%  { transform: scale(0.8, 0.9) translate(4vw, 2vh) rotate(25deg); }
+    38%  { transform: scale(0.8, 0.9) translate(4vw, 2vh) rotate(15deg); }
+    40%  { transform: scale(0.8, 0.9) translate(4vw, 2vh) rotate(15deg); }
     78%  { transform: scale(0.9) translate(0vw, -6vh) rotate(-20deg); }
     80%  { transform: scale(0.9) translate(0vw, -6vh) rotate(-20deg); }
     100% { transform: scale(1)   translate(10px, -20px); } 
@@ -81,13 +81,13 @@ header {
     }
 
     #blob2 {
-        width:500px;
+        width:400px;
         height:358px;
     }
 
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
     #blob1 {
         width:118px;
         height:148px;
@@ -96,5 +96,17 @@ header {
     #blob2 {
         width:200px;
         height:158px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #blob1 {
+        width:18px;
+        height:48px;
+    }
+
+    #blob2 {
+        width:80px;
+        height:58px;
     }
 }

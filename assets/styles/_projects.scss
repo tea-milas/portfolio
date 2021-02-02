@@ -4,13 +4,13 @@
 
 /* PROJECTS SECTION */
 main {
-   
+    z-index: 2;
     width: 100vw;
 }
 
 #project__section {
     position: relative;
-    height: 120vh;
+    
     width: 100vw;
 }
 
@@ -27,88 +27,127 @@ main {
         align-self: center;
         height: 300px;
         width: 300px;
-        margin-bottom: 120px;
+        margin-bottom: 20%;
         z-index: 10;
 
-        h4, p {
+        h4 {
             margin-top: 10px;
             color: $colour-grey;
             text-align: center;
             z-index: 9;
         }
-
-        .project__dropdown {
-            height: 400px;
+        
+        .project__default-text {
+            height: 300px;
             width: 300px;
-            display: none;
-            position: absolute;
-            top: 0;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-
+            background-color: $colour-light-grey;
+            z-index: 10;
         }
-
-        .project__dropdown-text {
-            display: none;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 5px;
-            left: 0;
-            
-            p {
-                text-align: left;
-            }
-
-            ul {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-
-                li {
-                    list-style-type: none;
-                }
-            }
-        }
-
     }
-    
-
-    .project__image {
-        height: 300px;
-        width: 300px;
-        background-color: $colour-light-grey;
-        z-index: 10;
+    .project:hover {
+        padding-bottom: 150px;
     }
+
+    .project:hover .project__default {
+        display: none;
+    }
+
+
 }
 
-.projects:hover .project__dropdown .project__dropdown-text {
-    background-color: rgba(188, 143, 143, 0.217);
+.project__dropdown {
+    height: 500px;
+    width: 301px;
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    border: 1px solid $colour-white;
+    min-width: 160px;
+    box-shadow: 3px 0px 4px 0px $colour-ocre;
+    z-index: 2;
 
+    .project__dropdown-image {
+        height: 200px;
+        width: 300px;
+        background-color: $colour-white;
+        border: 1px solid $colour-white;
+        border-radius: 3px;
+        z-index: 2;
+        margin-bottom: 8px;
+    }
+
+    .project__dropdown-text {
+        z-index: 3;
+        text-align: left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 5px;
+        left: 0;
+        
+        p {
+            text-align: center;
+            text-justify: inter-word;
+            margin-top: 20px;
+        }
+
+        ul {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+            }
+        }
+
+        .project__dropdown-buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px ;
+            
+
+            button {
+                width: 100px;
+                background-color: $colour-light-grey;
+                color: $colour-grey;
+                border: 1px solid $colour-light-grey;
+                padding: 10px 20px;
+            }
+
+            button:hover {
+                border: 1px solid $colour-grey;
+                color: $colour-white;
+                background-color: $colour-grey;
+            }
+        }
+    }
+    
+}
+    
+
+.project:hover .project__dropdown {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-
     
-    text-align: center;
-    font-size: larger;
-    color: green; 
 }
 
 
 #blob3 {
+    opacity: 80%;
+    width: 45vw;
+    height: 576px; 
     position: absolute;
     left: 25%;
-    z-index: 1;
+    z-index: 3;
 }
 
 
