@@ -1,0 +1,30 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 78px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 70px;
+}
+
+h4 {
+  font-size: M;
+}
+
+p, a, h5, h6 {
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

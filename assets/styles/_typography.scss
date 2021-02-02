@@ -1,0 +1,91 @@
+@import './_variables.scss';
+
+
+$main-font: 'Lato', sans-serif;
+
+$font-XXL: 90px;
+$font-XL: 78px;
+$font-L: 70px;
+$font-M: 40px;
+$font-S: 20px;
+$font-XS: 15px;
+$font-XXS: 10px;
+
+$bold : 700;
+
+
+body {
+    font-family: $main-font;
+}
+h1 {
+    font-size: $font-XXL;
+    font-weight: $bold;
+}
+
+h2 {
+    font-size: $font-XL;
+    font-weight: $bold;
+}
+
+h3 {
+    font-size: $font-M;
+}
+
+h4, a{
+    font-size: $font-S;
+}
+
+p, h5, h6 {
+    font-size: $font-XS;
+}
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: $font-XL;
+        font-weight: $bold;
+    }
+    
+    h2 {
+        font-size: $font-L;
+        font-weight: $bold;
+    }
+    
+    h3 {
+        font-size: $font-S;
+    }
+    
+    h4 {
+        font-size: $font-S;
+    }
+    
+    p, a, h5, h6 {
+        font-size: $font-XS;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: $font-L;
+        font-weight: $bold;
+    }
+    
+    h2 {
+        font-size: $font-M;
+        font-weight: $bold;
+    }
+    
+    h3 {
+        font-size: $font-S;
+    }
+    
+    h4 {
+        font-size: $font-XS;
+    }
+    
+    p, a, h5, h6 {
+        font-size: $font-XXS;
+    }
+
+}
