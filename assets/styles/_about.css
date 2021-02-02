@@ -16,34 +16,92 @@ h3 {
   font-size: 70px;
 }
 
-h4 {
-  font-size: M;
-}
-
-p, a, h5, h6 {
+h4, a {
   font-size: 20px;
 }
 
+p, h5, h6 {
+  font-size: 15px;
+}
+
+.fab, .fas {
+  color: #A4742C;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 78px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p, a, h5, h6 {
+    font-size: 15px;
+  }
+
+  .fab, .fas {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  p, a, h5, h6 {
+    font-size: 10px;
+  }
+
+  .fab, .fas {
+    font-size: 15px;
+  }
+}
 /* ABOUT SECTION */
 #about {
-  margin-top: 40px;
+  margin-top: 140px;
   width: 100vw;
   position: relative;
   background-color: #332A2A;
   /* about title */
 }
 #about h3 {
-  position: absolute;
-  top: 8%;
-  left: 80px;
-  margin-left: 50px;
-  z-index: 10;
-  font-size: 70px;
+  padding-top: 70px;
+  margin-left: 10%;
+  z-index: 3;
+  position: relative;
 }
 #about #about__blob {
   position: absolute;
   top: 5%;
   left: 5%;
+  z-index: 1;
 }
 
 /* about description + img */
@@ -53,7 +111,7 @@ p, a, h5, h6 {
   display: grid;
   align-content: center;
   grid-template-columns: 2fr 1fr;
-  padding-top: 8%;
+  padding-top: 2%;
 }
 
 /* about me - description */

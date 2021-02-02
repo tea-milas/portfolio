@@ -4,7 +4,7 @@
 /* ABOUT SECTION */
 
 #about {
-    margin-top: 40px;
+    margin-top: 140px;
     width: 100vw;
     position: relative;
     background-color: $colour-grey;
@@ -12,19 +12,17 @@
 /* about title */
 
     h3 {
-        position: absolute;
-        top: 8%;
-        left: 80px;
-        
-        margin-left: 50px;
-        z-index: 10;
-        font-size: 70px;
+        padding-top: 70px;
+        margin-left: 10%;
+        z-index: 3;
+        position: relative;
     }
 
     #about__blob {
         position: absolute;
         top: 5%;
         left: 5%;
+        z-index: 1;
     }
 }
 
@@ -37,7 +35,7 @@
     display: grid;
     align-content: center;
     grid-template-columns: 2fr 1fr;
-    padding-top: 8%;
+    padding-top: 2%;
     
 
 }

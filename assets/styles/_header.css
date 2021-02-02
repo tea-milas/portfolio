@@ -112,7 +112,7 @@ header {
   height: 548px;
   position: absolute;
   top: 13%;
-  left: 15%;
+  left: 19%;
   z-index: 1;
   animation: move 10s ease-in-out infinite;
   transform-origin: 50% 50%;

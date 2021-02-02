@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-    font-size: $font-M;
+    font-size: $font-L;
 }
 
 h4, a{
@@ -43,6 +43,11 @@ p, h5, h6 {
 
 .fab, .fas {
     color: $colour-ocre;
+    font-size: $font-M;
+}
+
+.fab:hover, .fas:hover {
+    color: $colour-light-grey;
     font-size: $font-M;
 }
 

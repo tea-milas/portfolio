@@ -8,9 +8,13 @@ main {
     width: 100vw;
 }
 
+#projects__title {
+    margin-top: 70px;
+    margin-left: 10%;
+}
+
 #project__section {
     position: relative;
-    
     width: 100vw;
 }
 
@@ -18,21 +22,22 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4%;
-    margin: 9% 0;
+    margin: 6% 0;
     z-index: 10;
 
     .project {
+        transition: 0.6s ease;
         position: relative;
         justify-self: center;
         align-self: center;
         height: 300px;
         width: 300px;
-        margin-bottom: 20%;
+        margin-bottom: 30%;
         z-index: 10;
 
         h4 {
             margin-top: 10px;
-            color: $colour-grey;
+            color: $colour-ocre;
             text-align: center;
             z-index: 9;
         }
@@ -45,7 +50,7 @@ main {
         }
     }
     .project:hover {
-        padding-bottom: 150px;
+        padding-bottom: 50px;
     }
 
     .project:hover .project__default {
@@ -138,16 +143,6 @@ main {
     left: 0;
     
     
-}
-
-
-#blob3 {
-    opacity: 80%;
-    width: 45vw;
-    height: 576px; 
-    position: absolute;
-    left: 25%;
-    z-index: 3;
 }
 
 

@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 h4, a {
@@ -26,6 +26,11 @@ p, h5, h6 {
 
 .fab, .fas {
   color: #A4742C;
+  font-size: 40px;
+}
+
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
   font-size: 40px;
 }
 
@@ -98,7 +103,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 h4, a {
@@ -111,6 +116,11 @@ p, h5, h6 {
 
 .fab, .fas {
   color: #A4742C;
+  font-size: 40px;
+}
+
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
   font-size: 40px;
 }
 
@@ -188,7 +198,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 h4, a {
@@ -201,6 +211,11 @@ p, h5, h6 {
 
 .fab, .fas {
   color: #A4742C;
+  font-size: 40px;
+}
+
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
   font-size: 40px;
 }
 
@@ -307,7 +322,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 h4, a {
@@ -320,6 +335,11 @@ p, h5, h6 {
 
 .fab, .fas {
   color: #A4742C;
+  font-size: 40px;
+}
+
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
   font-size: 40px;
 }
 
@@ -406,7 +426,7 @@ header {
   height: 548px;
   position: absolute;
   top: 13%;
-  left: 15%;
+  left: 19%;
   z-index: 1;
   animation: move 10s ease-in-out infinite;
   transform-origin: 50% 50%;
@@ -497,7 +517,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 h4, a {
@@ -510,6 +530,11 @@ p, h5, h6 {
 
 .fab, .fas {
   color: #A4742C;
+  font-size: 40px;
+}
+
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
   font-size: 40px;
 }
 
@@ -573,6 +598,11 @@ main {
   width: 100vw;
 }
 
+#projects__title {
+  margin-top: 70px;
+  margin-left: 10%;
+}
+
 #project__section {
   position: relative;
   width: 100vw;
@@ -582,21 +612,22 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4%;
-  margin: 9% 0;
+  margin: 6% 0;
   z-index: 10;
 }
 #project__grid .project {
+  transition: 0.6s ease;
   position: relative;
   justify-self: center;
   align-self: center;
   height: 300px;
   width: 300px;
-  margin-bottom: 20%;
+  margin-bottom: 30%;
   z-index: 10;
 }
 #project__grid .project h4 {
   margin-top: 10px;
-  color: #332A2A;
+  color: #A4742C;
   text-align: center;
   z-index: 9;
 }
@@ -607,7 +638,7 @@ main {
   z-index: 10;
 }
 #project__grid .project:hover {
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 #project__grid .project:hover .project__default {
   display: none;
@@ -685,15 +716,6 @@ main {
   left: 0;
 }
 
-#blob3 {
-  opacity: 80%;
-  width: 45vw;
-  height: 576px;
-  position: absolute;
-  left: 25%;
-  z-index: 3;
-}
-
 @media only screen and (max-width: 1100px) {
   #project__grid {
     grid-template-columns: 1fr 1fr;
@@ -719,7 +741,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 h4, a {
@@ -732,6 +754,11 @@ p, h5, h6 {
 
 .fab, .fas {
   color: #A4742C;
+  font-size: 40px;
+}
+
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
   font-size: 40px;
 }
 
@@ -791,24 +818,23 @@ p, h5, h6 {
 }
 /* ABOUT SECTION */
 #about {
-  margin-top: 40px;
+  margin-top: 140px;
   width: 100vw;
   position: relative;
   background-color: #332A2A;
   /* about title */
 }
 #about h3 {
-  position: absolute;
-  top: 8%;
-  left: 80px;
-  margin-left: 50px;
-  z-index: 10;
-  font-size: 70px;
+  padding-top: 70px;
+  margin-left: 10%;
+  z-index: 3;
+  position: relative;
 }
 #about #about__blob {
   position: absolute;
   top: 5%;
   left: 5%;
+  z-index: 1;
 }
 
 /* about description + img */
@@ -818,7 +844,7 @@ p, h5, h6 {
   display: grid;
   align-content: center;
   grid-template-columns: 2fr 1fr;
-  padding-top: 8%;
+  padding-top: 2%;
 }
 
 /* about me - description */
