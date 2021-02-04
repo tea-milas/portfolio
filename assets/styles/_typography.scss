@@ -52,7 +52,7 @@ p, h5, h6 {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 740px) {
     h1 {
         font-size: $font-XL;
         font-weight: $bold;
@@ -64,7 +64,7 @@ p, h5, h6 {
     }
     
     h3 {
-        font-size: $font-S;
+        font-size: $font-M;
     }
     
     h4 {
@@ -76,12 +76,12 @@ p, h5, h6 {
     }
 
     .fab, .fas {
-        font-size: $font-S;
+        font-size: $font-M;
     }
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 556px) {
     h1 {
         font-size: $font-L;
         font-weight: $bold;
@@ -91,23 +91,7 @@ p, h5, h6 {
         font-size: $font-M;
         font-weight: $bold;
     }
-    
-    h3 {
-        font-size: $font-S;
-    }
-    
-    h4 {
-        font-size: $font-XS;
-    }
-    
-    p, a, h5, h6 {
-        font-size: $font-XXS;
-    }
 
-    .fab, .fas {
-        font-size: $font-XS;
-    }
-
-}
+} 
 
 

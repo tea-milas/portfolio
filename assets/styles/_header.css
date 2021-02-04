@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 h4, a {
@@ -29,7 +29,12 @@ p, h5, h6 {
   font-size: 40px;
 }
 
-@media only screen and (max-width: 768px) {
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 740px) {
   h1 {
     font-size: 78px;
     font-weight: 700;
@@ -41,7 +46,7 @@ p, h5, h6 {
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   h4 {
@@ -53,10 +58,10 @@ p, h5, h6 {
   }
 
   .fab, .fas {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 556px) {
   h1 {
     font-size: 70px;
     font-weight: 700;
@@ -65,22 +70,6 @@ p, h5, h6 {
   h2 {
     font-size: 40px;
     font-weight: 700;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 15px;
-  }
-
-  p, a, h5, h6 {
-    font-size: 10px;
-  }
-
-  .fab, .fas {
-    font-size: 15px;
   }
 }
 header {
@@ -151,40 +140,73 @@ header {
 #vertical-line {
   display: inline-block;
   border-left: 7px solid #C4C4C4;
-  margin: 43% 10px 0 95%;
-  height: 150px;
+  margin: 40% 10px 0 95%;
+  height: 200px;
 }
 
-@media only screen and (max-width: 1100px) {
-  #blob1 {
+@media only screen and (max-width: 1025px) {
+  header #header__animation #blob1 {
+    width: 438px;
+    height: auto;
+    top: 20%;
+    left: 14%;
+  }
+  header #header__animation #blob1 svg {
+    width: 438px;
+    height: 468px;
+  }
+  header #header__animation #blob2 {
+    width: 520px;
+    height: auto;
+    top: 20%;
+    left: 35%;
+  }
+  header #header__animation #blob2 svg {
+    width: 520px;
+    height: 478px;
+  }
+  header #vertical-line {
+    margin-top: 64%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  header #header__animation #blob1 {
+    width: 319px;
+    height: auto;
+    left: 12%;
+    top: 30%;
+  }
+  header #header__animation #blob1 svg {
     width: 318px;
     height: 348px;
   }
-
-  #blob2 {
+  header #header__animation #blob2 {
+    width: 400px;
+    height: auto;
+    top: 30%;
+  }
+  header #header__animation #blob2 svg {
     width: 400px;
     height: 358px;
   }
 }
-@media only screen and (max-width: 768px) {
-  #blob1 {
-    width: 118px;
-    height: 148px;
+@media only screen and (max-width: 650px) {
+  header #header__animation #blob1 {
+    width: 298px;
+    left: 4%;
   }
-
-  #blob2 {
-    width: 200px;
-    height: 158px;
+  header #header__animation #blob1 svg {
+    width: 298px;
+    height: 318px;
   }
-}
-@media only screen and (max-width: 600px) {
-  #blob1 {
-    width: 18px;
-    height: 48px;
+  header #header__animation #blob2 {
+    width: 350px;
   }
-
-  #blob2 {
-    width: 80px;
-    height: 58px;
+  header #header__animation #blob2 svg {
+    width: 350px;
+    height: 308px;
+  }
+  header #vertical-line {
+    margin-top: 90vh;
   }
 }

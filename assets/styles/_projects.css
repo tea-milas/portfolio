@@ -29,7 +29,12 @@ p, h5, h6 {
   font-size: 40px;
 }
 
-@media only screen and (max-width: 768px) {
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 740px) {
   h1 {
     font-size: 78px;
     font-weight: 700;
@@ -41,52 +46,52 @@ p, h5, h6 {
   }
 
   h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 20px;
-  }
-
-  p, a, h5, h6 {
-    font-size: 15px;
-  }
-
-  .fab, .fas {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 70px;
-    font-weight: 700;
-  }
-
-  h2 {
     font-size: 40px;
-    font-weight: 700;
-  }
-
-  h3 {
-    font-size: 20px;
   }
 
   h4 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   p, a, h5, h6 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .fab, .fas {
-    font-size: 15px;
+    font-size: 40px;
   }
 }
+/* @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: $font-L;
+        font-weight: $bold;
+    }
+
+    h2 {
+        font-size: $font-M;
+        font-weight: $bold;
+    }
+
+    h3 {
+        font-size: $font-S;
+    }
+
+    h4 {
+        font-size: $font-XS;
+    }
+
+    p, a, h5, h6 {
+        font-size: $font-XXS;
+    }
+
+    .fab, .fas {
+        font-size: $font-S;
+    }
+
+} */
 /* PROJECTS SECTION */
 main {
   z-index: 2;
-  width: 100vw;
 }
 
 #projects__title {
@@ -96,13 +101,12 @@ main {
 
 #project__section {
   position: relative;
-  width: 100vw;
 }
 
 #project__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4%;
+  row-gap: 4%;
   margin: 6% 0;
   z-index: 10;
 }
@@ -207,13 +211,38 @@ main {
   left: 0;
 }
 
-@media only screen and (max-width: 1100px) {
+#vertical-line2 {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  border-left: 7px solid #A4742C;
+  margin: -30px 10px 0 95%;
+  height: 150px;
+}
+
+@media only screen and (max-width: 1025px) {
+  #vertical-line2 {
+    margin: -2% 10px 0 95%;
+    height: 200px;
+  }
+
   #project__grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media only screen and (max-width: 600px) {
+.project:hover {
+  padding-bottom: 190px;
+}
+
+@media only screen and (max-width: 610px) {
   #project__grid {
     grid-template-columns: 1fr;
+    padding-bottom: 80%;
+  }
+  #project__grid .project {
+    margin-bottom: 10%;
+  }
+  #project__grid .project:hover {
+    margin-bottom: 14%;
   }
 }
