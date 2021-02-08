@@ -31,7 +31,7 @@ p, h5, h6 {
 
 .fab:hover, .fas:hover {
   color: #C4C4C4;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 740px) {
@@ -55,10 +55,6 @@ p, h5, h6 {
 
   p, a, h5, h6 {
     font-size: 15px;
-  }
-
-  .fab, .fas {
-    font-size: 40px;
   }
 }
 @media only screen and (max-width: 556px) {
@@ -197,8 +193,49 @@ p, h5, h6 {
     height: 110px;
     width: 110px;
   }
-  #about #contact__img img {
+  #about #about__articles {
+    margin-top: 8%;
+    row-gap: 10%;
+  }
+  #about #about__articles #about__intro h3 {
+    line-height: normal;
+  }
+  #about #about__articles #contact__img img {
     width: 200px;
     height: 250px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  #about #about__blob svg {
+    height: 110px;
+    width: 110px;
+  }
+  #about #about__articles {
+    margin-top: 0;
+    row-gap: 25px;
+  }
+  #about #about__articles #about__intro h3 {
+    font-size: 30px;
+  }
+  #about #about__articles #contact__img img {
+    width: 150px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  #about h3 {
+    padding-top: 50px;
+  }
+  #about #about__blob svg {
+    height: 100px;
+    width: 100px;
+  }
+  #about #about__articles {
+    padding: 20px 0 30px 0;
+    margin-top: 0;
+    row-gap: 25px;
+  }
+  #about #about__articles #about__intro h3 {
+    font-size: 30px;
   }
 }

@@ -48,7 +48,7 @@ p, h5, h6 {
 
 .fab:hover, .fas:hover {
     color: $colour-light-grey;
-    font-size: $font-M;
+    font-size: 50px;
 }
 
 
@@ -73,10 +73,6 @@ p, h5, h6 {
     
     p, a, h5, h6 {
         font-size: $font-XS;
-    }
-
-    .fab, .fas {
-        font-size: $font-M;
     }
 
 }

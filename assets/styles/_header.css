@@ -31,7 +31,7 @@ p, h5, h6 {
 
 .fab:hover, .fas:hover {
   color: #C4C4C4;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 740px) {
@@ -55,10 +55,6 @@ p, h5, h6 {
 
   p, a, h5, h6 {
     font-size: 15px;
-  }
-
-  .fab, .fas {
-    font-size: 40px;
   }
 }
 @media only screen and (max-width: 556px) {
@@ -189,6 +185,9 @@ header {
     width: 400px;
     height: 358px;
   }
+  header #vertical-line {
+    margin-top: 90vh;
+  }
 }
 @media only screen and (max-width: 650px) {
   header #header__animation #blob1 {
@@ -206,7 +205,54 @@ header {
     width: 350px;
     height: 308px;
   }
+}
+@media only screen and (max-width: 416px) {
+  header #header__animation #blob1 {
+    width: 198px;
+    left: 3%;
+    top: 30%;
+  }
+  header #header__animation #blob1 svg {
+    width: 198px;
+    height: 218px;
+  }
+  header #header__animation #blob2 {
+    top: 30%;
+    width: 240px;
+    left: 32%;
+  }
+  header #header__animation #blob2 svg {
+    width: 240px;
+    height: 208px;
+  }
+  @keyframes move {
+    0%, 100% {
+      transform: scale(1) translate(10px, -20px);
+    }
+    38% {
+      transform: scale(0.9) translate(0.5vw, 1vh) rotate(50deg);
+    }
+    40% {
+      transform: scale(0.9) translate(0.5vw, 1vh) rotate(50deg);
+    }
+    78% {
+      transform: scale(1) translate(0vw, -2vh) rotate(-20deg);
+    }
+    80% {
+      transform: scale(1) translate(0vw, -2vh) rotate(-20deg);
+    }
+  }
   header #vertical-line {
-    margin-top: 90vh;
+    margin-top: 85vh;
+  }
+}
+@media only screen and (max-width: 376px) {
+  header #header__animation #blob2 {
+    width: 230px;
+    left: 31%;
+  }
+  header #header__animation #blob2 svg {
+    width: 230px;
+    height: 208px;
   }
 }

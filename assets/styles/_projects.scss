@@ -45,6 +45,7 @@ main {
             width: 300px;
             background-color: $colour-light-grey;
             z-index: 10;
+                
         }
     }
     .project:hover {
@@ -180,13 +181,85 @@ main {
 
         .project {
         margin-bottom: 10%;
+        }
+
     }
-        .project:hover {
-            margin-bottom: 14%;
+}
+
+@media only screen and (max-width: 415px) {    
+    
+    #project__grid {
+        justify-self: center;
+        align-content: center;
+        row-gap: 6%;
+        margin: 48vh 0 10% 0;
+        
+
+        .project {
+            margin-bottom: 10%;
+            padding-bottom: 10px;
+       
+            .project__dropdown {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                
+                height: 400px;
+                width: 300px;
+                
+            
+                .project__dropdown-image {
+                    height: 150px;
+                    width: 300px;
+                }
+            
+                .project__dropdown-text {
+
+                    p {
+                        font-size: $font-XS;
+                        margin-top: 10px;
+                    }
+
+                    ul {
+                        margin-top: 10px;
+
+                        li{
+                            i{
+                                font-size: 25px;
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                } 
+
+                .project__dropdown-buttons {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 30px ;
+                    
+
+                    button {
+                        width: 100px;
+                        background-color: $colour-light-grey;
+                        color: $colour-grey;
+                        border: 1px solid $colour-light-grey;
+                        padding: 10px 20px;
+                    }
+
+                    button:active {
+                        border: 1px solid $colour-grey;
+                        color: $colour-white;
+                        background-color: $colour-grey;
+                    }
+                }
+            }
         }
     }
-
-    
-
 }
 

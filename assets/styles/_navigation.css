@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 70px;
 }
 
 h4, a {
@@ -24,7 +24,17 @@ p, h5, h6 {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+.fab, .fas {
+  color: #A4742C;
+  font-size: 40px;
+}
+
+.fab:hover, .fas:hover {
+  color: #C4C4C4;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 740px) {
   h1 {
     font-size: 78px;
     font-weight: 700;
@@ -36,7 +46,7 @@ p, h5, h6 {
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   h4 {
@@ -47,7 +57,7 @@ p, h5, h6 {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 556px) {
   h1 {
     font-size: 70px;
     font-weight: 700;
@@ -56,18 +66,6 @@ p, h5, h6 {
   h2 {
     font-size: 40px;
     font-weight: 700;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 15px;
-  }
-
-  p, a, h5, h6 {
-    font-size: 10px;
   }
 }
 /* navigation */
@@ -88,7 +86,6 @@ nav ul {
   margin-right: 10px;
 }
 nav ul li {
-  color: #E5E5E5;
   padding: 0px 20px;
   transition: color 0.4s ease-out;
 }
@@ -98,8 +95,5 @@ nav ul li a {
 }
 nav ul li a:hover {
   cursor: pointer;
-  color: #A4742C;
-}
-nav nav.scroll {
   color: #A4742C;
 }
