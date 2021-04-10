@@ -1,4 +1,7 @@
-# Portfolio
-my portfolio (IN THE MAKING)
+# Portfolio V1
+At the beginning of _nology course we got the task to design our portfolio in Figma and make it in Html5, SASS and JavaScript. 
+Two weeks before the end of the course I rewrote it in React.
+You can find the finished portfolio here: https://tea-milas-portfolio.herokuapp.com/
+And in this gitHub repository: https://github.com/tea-milas/portfolio-react
 
-to view: https://tea-milas.github.io/portfolio/
+to view this unfinished version: https://tea-milas.github.io/portfolio/
